@@ -98,8 +98,6 @@
     <Content Include="Javascript\jquery-ui.min.js" />
     <Content Include="Javascript\jquery.min.js" />
     <Content Include="Pages\DadosPessoais.html" />
-    <Content Include="Pages\Iniciante.html" />
-    <Content Include="Pages\Modal.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
