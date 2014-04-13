@@ -108,6 +108,11 @@
         .form-tela .controls {
             padding-right: 10px;
         }
+
+        .margem-esquerda-direita-5px {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -267,43 +272,44 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="bairro">
-                                                        Bairro
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="bairro" name="bairro" type="text" class="input-xlarge form-control">
+                                            <div class="row; margem-esquerda-direita-5px">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="bairro">
+                                                            Bairro
+                                                        </label>
+                                                        <div class="controls">
+                                                            <input id="bairro" name="bairro" type="text" class="input-xlarge form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="cidade">
+                                                            Cidade
+                                                        </label>
+                                                        <div class="controls">
+                                                            <input id="cidade" name="cidade" type="text" class="input-xlarge form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="estado">
+                                                            Estado
+                                                        </label>
+                                                        <div class="controls">
+                                                            <select id="estado" name="estado" class="form-control">
+                                                                <option></option>
+                                                                <option>RJ</option>
+                                                                <option>MG</option>
+                                                                <option>SP</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="cidade">
-                                                        Cidade
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="cidade" name="cidade" type="text" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="estado">
-                                                        Estado
-                                                    </label>
-                                                    <div class="controls">
-                                                        <select id="estado" name="estado" class="form-control">
-                                                            <option></option>
-                                                            <option>RJ</option>
-                                                            <option>MG</option>
-                                                            <option>SP</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <!-- Text input-->
                                                 <div class="form-group">
                                                     <label class="control-label" for="telefone">
                                                         Telefone Residencial
@@ -314,7 +320,6 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <!-- Text input-->
                                                 <div class="form-group">
                                                     <label class="control-label" for="celular">
                                                         Celular
@@ -335,13 +340,26 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="precisaResposavel">
+                                                        Precisa de acompanhamento de um responsável?
+                                                    </label>
+                                                    <div class="controls">
+                                                        <input id="precisaResposavel" name="precisaResposavel" type="checkbox" class="checkbox">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="control-label" for="reponsavel">
                                                         Responsável
                                                     </label>
                                                     <div class="controls">
-                                                        <input id="reponsavel" name="reponsavel" type="text" placeholder="Responsável" class="input-xlarge form-control">
+                                                        <input id="reponsavel" name="reponsavel" type="text" class="input-xlarge form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -358,6 +376,29 @@
                                     </div>
                                     <div id="collapseTwo" class="panel-collapse collapse in">
                                         <div class="panel-body">
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="nomePai">
+                                                        Nome do pai
+                                                    </label>
+                                                    <div class="controls" style="min-width: 150px;">
+                                                        <input id="nomePai" name="nomePai" type="text" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="nomeMae">
+                                                        Nome da mãe
+                                                    </label>
+                                                    <div class="controls" style="min-width: 150px;">
+                                                        <input id="nomeMae" name="nomeMae" type="text" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="control-label" for="sexo">
@@ -428,28 +469,30 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="profissao">
-                                                        Profissão
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="profissao" name="profissao" type="text" placeholder="Profissão" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="procendecia">
-                                                        Procedência
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="procendecia" name="procendecia" type="text" placeholder="Procedência"
-                                                               class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
 
+                                            <div class="row; margem-esquerda-direita-5px">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="profissao">
+                                                            Profissão
+                                                        </label>
+                                                        <div class="controls">
+                                                            <input id="profissao" name="profissao" type="text" placeholder="Profissão" class="input-xlarge form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="procendecia">
+                                                            Procedência
+                                                        </label>
+                                                        <div class="controls">
+                                                            <input id="procendecia" name="procendecia" type="text" placeholder="Procedência"
+                                                                   class="input-xlarge form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
