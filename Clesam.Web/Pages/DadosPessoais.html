@@ -1,15 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <script src="../Javascript/bootstrap.js"></script>
-    <script src="../Javascript/bootstrap.min.js"></script>
     <script src="../Javascript/jquery-ui.min.js"></script>
     <script src="../Javascript/jquery.min.js"></script>
+	<script src="../Javascript/bootstrap.js"></script>
+    <script src="../Javascript/bootstrap.min.js"></script>
     <link href="../App_Themes/bootstrap-3.1.1-dist/css/bootstrap-theme.css" rel="stylesheet" />
-    <link href="../App_Themes/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="../App_Themes/bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="../App_Themes/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body, html {
             margin: 0px;
@@ -88,9 +86,9 @@
             margin-top: -3px;
         }
 
-            .add-panel img, .icon-panel img {
-                width: 25px;
-            }
+		.add-panel img, .icon-panel img {
+			width: 25px;
+		}
 
         .btn-editar {
             background-image: url(../imagens/edit.png);
@@ -108,6 +106,10 @@
         .form-tela .controls {
             padding-right: 10px;
         }
+		
+		.panel-body .row{
+			padding:0px 10px;
+		}
 
         .margem-esquerda-direita-5px {
             margin-left: 5px;
@@ -182,328 +184,336 @@
                                 <li><a href="#">Alertas</a></li>
                             </ul>
                         </div>
+					</div>
                         <!--- MENU ---->
-                        <form class="form-horizontal">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                Dados pessoais
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <!-- Text input-->
-                                            <div class="row" style="margin-left:5px">
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="prontuario">
-                                                            Número do prontuário
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="prontuario" name="prontuario" type="text" class="input-xlarge form-control" maxlength="10" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+					<form class="form-horizontal">
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+											Dados pessoais
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<!-- Text input-->
+										<div class="row" >
+											<div class="col-md-2">
+												<div class="form-group">
+													<label class="control-label" for="prontuario">
+														Número do prontuário
+													</label>
+													<div class="controls">
+														<input id="prontuario" name="prontuario" type="text" class="input-xlarge form-control" maxlength="10" required="">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="row" style="margin-left:5px; margin-right:5px">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="nome">
-                                                            Nome
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="nome" name="nome" type="text" class="input-xlarge form-control" maxlength="60" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="nome">
+														Nome
+													</label>
+													<div class="controls">
+														<input id="nome" name="nome" type="text" class="input-xlarge form-control" maxlength="60" required="">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="row" style="margin-left:5px">
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="nasc">
-                                                            Data de Nascimento
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="nasc" name="nasc" type="date" class="input-xlarge form-control" required="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+										<div class="row" >
+											<div class="col-md-3">
+												<div class="form-group">
+													<label class="control-label" for="nasc">
+														Data de Nascimento
+													</label>
+													<div class="controls">
+														<input id="nasc" name="nasc" type="date" class="input-xlarge form-control" required="">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="row" style="margin-left:5px">
-                                                <div class="col-md-3">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="cep">
-                                                            CEP
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="cep" name="cep" type="text" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+										<div class="row" >
+											<div class="col-md-3">
+												<div class="form-group">
+													<label class="control-label" for="cep">
+														CEP
+													</label>
+													<div class="controls">
+														<input id="cep" name="cep" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="row" style="margin-left:5px">
-                                                <div class="col-md-10">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="logradouro">
-                                                            Logradouro
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="logradouro" name="logradouro" type="text" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
+										<div class="row" >
+											<div class="col-md-10">
+												<div class="form-group">
+													<label class="control-label" for="logradouro">
+														Logradouro
+													</label>
+													<div class="controls">
+														<input id="logradouro" name="logradouro" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
 
-                                                <div class="col-md-1" style="margin-left:4px">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="numero">
-                                                            Número
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="numero" name="numero" type="text" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+											<div class="col-md-2">
+												<div class="form-group">
+													<label class="control-label" for="numero">
+														Número
+													</label>
+													<div class="controls">
+														<input id="numero" name="numero" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="row; margem-esquerda-direita-5px">
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="bairro">
-                                                            Bairro
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="bairro" name="bairro" type="text" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="cidade">
-                                                            Cidade
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="cidade" name="cidade" type="text" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="estado">
-                                                            Estado
-                                                        </label>
-                                                        <div class="controls">
-                                                            <select id="estado" name="estado" class="form-control">
-                                                                <option></option>
-                                                                <option>RJ</option>
-                                                                <option>MG</option>
-                                                                <option>SP</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="telefone">
-                                                        Telefone Residencial
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="telefone" name="telefone" type="text" placeholder="telefone" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="celular">
-                                                        Celular
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="telefone" name="celular" type="text" placeholder="celular" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="telComercial">
-                                                        Telefone Comercial
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="telefone2" name="telComercial" type="text" placeholder="telefone (opcional)"
-                                                               class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="bairro">
+														Bairro
+													</label>
+													<div class="controls">
+														<input id="bairro" name="bairro" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="cidade">
+														Cidade
+													</label>
+													<div class="controls">
+														<input id="cidade" name="cidade" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="estado">
+														Estado
+													</label>
+													<div class="controls">
+														<select id="estado" name="estado" class="form-control">
+															<option></option>
+															<option>RJ</option>
+															<option>MG</option>
+															<option>SP</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									   <div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<label class="control-label" for="telefone">
+													Telefone Residencial
+												</label>
+												<div class="controls">
+													<input id="telefone" name="telefone" type="text" placeholder="telefone" class="input-xlarge form-control">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label class="control-label" for="celular">
+													Celular
+												</label>
+												<div class="controls">
+													<input id="telefone" name="celular" type="text" placeholder="celular" class="input-xlarge form-control">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label class="control-label" for="telComercial">
+													Telefone Comercial
+												</label>
+												<div class="controls">
+													<input id="telefone2" name="telComercial" type="text" placeholder="telefone (opcional)"
+														   class="input-xlarge form-control">
+												</div>
+											</div>
+										</div>
+									   </div>
+									   <div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="precisaResposavel">
+														Precisa de acompanhamento de um responsável?
+													</label>
+													<div class="controls">
+														<input id="precisaResposavel" name="precisaResposavel" type="checkbox" class="checkbox">
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="precisaResposavel">
-                                                        Precisa de acompanhamento de um responsável?
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="precisaResposavel" name="precisaResposavel" type="checkbox" class="checkbox">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="reponsavel">
-                                                        Responsável
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="reponsavel" name="reponsavel" type="text" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                                Dados Complementares
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="nomePai">
-                                                        Nome do pai
-                                                    </label>
-                                                    <div class="controls" style="min-width: 150px;">
-                                                        <input id="nomePai" name="nomePai" type="text" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="nomeMae">
-                                                        Nome da mãe
-                                                    </label>
-                                                    <div class="controls" style="min-width: 150px;">
-                                                        <input id="nomeMae" name="nomeMae" type="text" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="sexo">
-                                                        Sexo
-                                                    </label>
-                                                    <div class="controls" style="min-width: 150px;">
-                                                        <select id="sexo" name="sexo" class="form-control">
-                                                            <option></option>
-                                                            <option>Masculino</option>
-                                                            <option>Feminino</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="estadocivil">
-                                                        Estado Civil
-                                                    </label>
-                                                    <div class="controls">
-                                                        <select id="estadocivil" name="estadocivil" class="form-control">
-                                                            <option></option>
-                                                            <option>Solteiro</option>
-                                                            <option>Casado</option>
-                                                            <option>Divorciado</option>
-                                                            <option>Viúvo</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="escolaridade">
-                                                        Escolaridade
-                                                    </label>
-                                                    <div class="controls">
-                                                        <select id="escolaridade" name="escolaridade" class="form-control">
-                                                            <option></option>
-                                                            <option>Analfabeto</option>
-                                                            <option>Ensino fundamental incompleto</option>
-                                                            <option>Ensino fundamental completo</option>
-                                                            <option>Ensino médio incompleto</option>
-                                                            <option>Ensino médio completo</option>
-                                                            <option>Ensino superior incompleto</option>
-                                                            <option>Ensino superior completo</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="peso">
-                                                        Peso
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="peso" name="peso" type="text" placeholder="Peso" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label class="control-label" for="altura">
-                                                        Altura
-                                                    </label>
-                                                    <div class="controls">
-                                                        <input id="altura" name="altura" type="text" placeholder="Altura" class="input-xlarge form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row; margem-esquerda-direita-5px">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="profissao">
-                                                            Profissão
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="profissao" name="profissao" type="text" placeholder="Profissão" class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="procendecia">
-                                                            Procedência
-                                                        </label>
-                                                        <div class="controls">
-                                                            <input id="procendecia" name="procendecia" type="text" placeholder="Procedência"
-                                                                   class="input-xlarge form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <div class="text-right">
-                            <button type="submit" id="button2id" name="button2id" class="btn btn-success" style="margin-right:20px">Salvar</button>
-                        </div>
-                    </div>
+									   <div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="reponsavel">
+														Responsável
+													</label>
+													<div class="controls">
+														<input id="reponsavel" name="reponsavel" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+											Dados Complementares
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class='row'>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="nomePai">
+														Nome do pai
+													</label>
+													<div class="controls" style="min-width: 150px;">
+														<input id="nomePai" name="nomePai" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="nomeMae">
+														Nome da mãe
+													</label>
+													<div class="controls" style="min-width: 150px;">
+														<input id="nomeMae" name="nomeMae" type="text" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="sexo">
+														Sexo
+													</label>
+													<div class="controls" style="min-width: 150px;">
+														<select id="sexo" name="sexo" class="form-control">
+															<option></option>
+															<option>Masculino</option>
+															<option>Feminino</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="estadocivil">
+														Estado Civil
+													</label>
+													<div class="controls">
+														<select id="estadocivil" name="estadocivil" class="form-control">
+															<option></option>
+															<option>Solteiro</option>
+															<option>Casado</option>
+															<option>Divorciado</option>
+															<option>Viúvo</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="escolaridade">
+														Escolaridade
+													</label>
+													<div class="controls">
+														<select id="escolaridade" name="escolaridade" class="form-control">
+															<option></option>
+															<option>Analfabeto</option>
+															<option>Ensino fundamental incompleto</option>
+															<option>Ensino fundamental completo</option>
+															<option>Ensino médio incompleto</option>
+															<option>Ensino médio completo</option>
+															<option>Ensino superior incompleto</option>
+															<option>Ensino superior completo</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="peso">
+														Peso
+													</label>
+													<div class="controls">
+														<input id="peso" name="peso" type="text" placeholder="Peso" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="altura">
+														Altura
+													</label>
+													<div class="controls">
+														<input id="altura" name="altura" type="text" placeholder="Altura" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label class="control-label" for="profissao">
+														Profissão
+													</label>
+													<div class="controls">
+														<input id="profissao" name="profissao" type="text" placeholder="Profissão" class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='row'>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="control-label" for="procendecia">
+														Procedência
+													</label>
+													<div class="controls">
+														<input id="procendecia" name="procendecia" type="text" placeholder="Procedência"
+															   class="input-xlarge form-control">
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="row" style='padding:0 25px 10px 0'>
+						<div class="text-right">
+							<button type="submit" id="button2id" name="button2id" class="btn btn-success" style="margin-right:20px">Salvar</button>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
